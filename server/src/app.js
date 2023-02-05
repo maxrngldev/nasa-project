@@ -9,7 +9,7 @@ const cookieSesion = require('cookie-session');
 const { viewsRouter } = require('./routes/views/views.routes');
 const { api } = require('./routes/api');
 
-const { oauth } = require('./services/oauth');
+// const { oauth } = require('./services/oauth');
 
 const app = express();
 
@@ -23,8 +23,8 @@ app.use(
 	})
 );
 
-app.use(oauth.initialize());
-app.use(oauth.session());
+// app.use(oauth.initialize());
+// app.use(oauth.session());
 
 // Loggin with morgan
 app.use(morgan('dev'));

@@ -8,11 +8,12 @@ const {
 } = require('./launches.controller');
 
 // Middlewares
-const { checkLoggedIn } = require('../../middlewares/auth.middleware');
+// const { checkLoggedIn } = require('../../middlewares/auth.middleware');
 
 const router = express.Router();
 
-router.get('/', checkLoggedIn, httpGetAllLaunches);
+// router.get('/', checkLoggedIn, httpGetAllLaunches);
+router.get('/', httpGetAllLaunches);
 
 router.post('/', httpCreateLaunch);
 
