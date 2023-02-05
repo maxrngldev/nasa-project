@@ -14,7 +14,8 @@
 		"start:server:prod": "npm start --prefix server",
 		"start:server:cluster": "npm run cluster --prefix server",
 		"deploy": "npm-run-all build:client start:server:prod",
-		"deploy-cluster": "npm-run-all build:client start:server:cluster"
+		"deploy-cluster": "npm-run-all build:client start:server:cluster",
+		"test": "npm run start:test --prefix server && npm test --prefix client"
 	},
 	"keywords": [],
 	"author": "",
